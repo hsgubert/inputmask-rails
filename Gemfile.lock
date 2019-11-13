@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    inputmask-rails (4.0.9)
+    inputmask-rails (4.0.9.1)
       rails (>= 3.2)
 
 GEM
