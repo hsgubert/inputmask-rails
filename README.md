@@ -1,4 +1,6 @@
 # inputmask-rails
+[![Gem Version](https://badge.fury.io/rb/inputmask-rails.svg)](https://badge.fury.io/rb/inputmask-rails)
+
 Wrapper gem to include Inputmask (js) to your Rails app
 
 This gem is a wrapper of [Inputmask project](https://github.com/RobinHerbots/Inputmask), that allows you to include Inputmask in your Rails app, using the asset pipeline.
