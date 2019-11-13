@@ -26,8 +26,39 @@ Or install it yourself as:
 
 ## Usage
 
-Include the inputmaks javascript in your `app/assets/javascripts/application.js` or `app/assets/javascripts/vendor.js`:
+If you're using JQuery and want to include the full inputmask javascript (with all extensions), just add the following line to your `app/assets/javascripts/application.js` or `app/assets/javascripts/vendor.js`:
 ```
-//= require inputmask
+//= require jquery.inputmask.bundle.min
 ```
 
+In case you are not using JQuery, or want to pick and choose extensions individually, please refer to the [Inputmask project](https://github.com/RobinHerbots/Inputmask) page and follow instructions (be careful to read the instructions of the right lib version, as of now it is **Inputmask version 4.0.9**)
+
+This gem includes all published js files of the Inputmask project, so you can require any of them in your Rails app assets. Namely:
+```
+# Non-minified
+inputmask.js
+inputmask.extensions.js
+inputmask.extensions.numeric.js
+inputmask.extensions.date.js
+jquery.inputmask.js
+bindings/inputmask.binding.js
+dependencyLibs/inputmask.dependencyLib.jqlite.js
+dependencyLibs/inputmask.dependencyLib.jquery.js
+dependencyLibs/inputmask.dependencyLib.js
+global/window.js
+jquery.inputmask.bundle.js
+
+# Minified
+inputmask.min.js
+inputmask.extensions.min.js
+inputmask.extensions.numeric.min.js
+inputmask.extensions.date.min.js
+jquery.inputmask.min.js
+bindings/inputmask.binding.min.js
+dependencyLibs/inputmask.dependencyLib.jqlite.min.js
+dependencyLibs/inputmask.dependencyLib.jquery.min.js
+dependencyLibs/inputmask.dependencyLib.min.js
+global/window.min.js
+jquery.inputmask.bundle.min.js
+
+```
