@@ -6,7 +6,7 @@ task :download_inputmask do
     puts "Downloading #{filename}.js"
     puts `curl -o vendor/assets/javascripts/#{filename}.js https://raw.githubusercontent.com/RobinHerbots/Inputmask/#{version}/dist/inputmask/#{filename}.js`
     puts "Downloading #{filename}.min.js"
-    puts `curl -o vendor/assets/javascripts/#{filename}.min.js https://raw.githubusercontent.com/RobinHerbots/Inputmask/#{version}/dist/min/inputmask/#{filename}.js`
+    puts `curl -o vendor/assets/javascripts/#{filename}.min.js https://raw.githubusercontent.com/RobinHerbots/Inputmask/#{version}/dist/min/inputmask/#{filename}.min.js`
   end
 
   def download_inputmask_bundle(filename, version)
